@@ -165,7 +165,7 @@ plotDispEsts(dds)
 ![](markdown_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 The plot represents the shrinkage of estimated dispersion per gene
-performed by DESeq() function. Since data scatter around the curve, with
+performed by DESeq(). Since data scatter around the curve, with
 the dispersion decreasing while increasing mean expression levels, we
 can be assured by the good fit of data for DESeq2 model.
 
@@ -191,7 +191,7 @@ Before having a look into the results, we have to generate more accurate
 log2 fold change estimates by using the *shrinkage of the LFC
 estimates*. The *MA plot* shows the mean of the normalized counts versus
 the log2 fold changes for all genes tested. The genes that are
-significantly DE are red colored to be easily identified.
+significantly DE are blue colored to be easily identified.
 
 ``` r
 # Saving unshrunken result table into a variable
@@ -707,7 +707,7 @@ pathview(gene.data = foldchanges,
          limit = list(gene=2, cpd=1))
 ```
 
-<img src="/home/redox/Scrivania/REDOX/sevoflurane/hsa04020.pathview.png" width="600">
+![](markdown_files/figure-gfm/hsa04020.pathview.png)<!-- -->
 
 Running GSEA again but with a higher cut-off we see ferroptosis
 (*hsa04216*) as a data set non significantly enriched:
